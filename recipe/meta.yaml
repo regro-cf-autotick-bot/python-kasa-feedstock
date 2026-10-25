@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "python-kasa" %}
-{% set version = "0.10.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python_kasa-{{ version }}.tar.gz
-  sha256: 4a75b72dc354b43b0b038d5f8ca142049879c76415728a9f24473fb15af45562
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/python_kasa-{{ version }}.tar.gz
+  sha256: 92b0cd9eafc89a07a31e5652dd494a2eed0477fc1b0e517ba1b1a045d2cf3643
 
 build:
   noarch: python
